@@ -55,7 +55,7 @@ const BsState = (props) => {
   };
 
   const handleGetBooking = async () => {
-    const response = await fetch("http://localhost:8080/api/booking", {
+    const response = await fetch(`${API}/api/booking`, {
       method: "GET"
     });
 
