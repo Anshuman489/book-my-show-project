@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import BsContext from "./BsContext";
+const API = require('../utils/api')
 
 const BsState = (props) => {
   const [errorPopup, setErrorpopup] = useState(false);
@@ -19,7 +20,7 @@ const BsState = (props) => {
   const [lastBookingDetails, setLastBookingDetails] = useState(null);
 
   const handlePostBooking = async () => {
-    const response = await fetch("http://localhost:8080/api/booking", {
+    const response = await fetch(`${API}/api/booking`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
