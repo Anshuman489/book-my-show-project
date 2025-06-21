@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/SeatInput.css";
 
-const SeatInputs = ({ key, text, noOfSeat, changeNoOfSeats }) => {
+const SeatInputs = ({ text, noOfSeat, changeNoOfSeats }) => {
   const change_seats = (e) => {
     changeNoOfSeats({ ...noOfSeat, [e.target.name]: Number(e.target.value) });
 

@@ -34,11 +34,20 @@
   justify-content: flex-start;
 }
 
-.seat_value{
+.seat_value_selected{
   width: 60px;
   padding: 5px;
   border-radius: 5px;
-  background-color: rgb(0, 207, 207);
+  background-color: rgb(0, 255, 221);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.seat_value_unselected{
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(178, 255, 157);
   margin-right: 10px;
   margin-bottom: 10px;
   text-align: center;
