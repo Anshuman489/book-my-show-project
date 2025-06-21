@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import BsContext from "./BsContext";
-const API = require('../utils/api')
+const API = process.env.REACT_APP_API_URL || "http://localhost:8080";
 
 const BsState = (props) => {
   const [errorPopup, setErrorpopup] = useState(false);
@@ -55,7 +55,7 @@ const BsState = (props) => {
   };
 
   const handleGetBooking = async () => {
-    const response = await fetch(`${API}/api/booking`, {
+    const response = await fetch("http://localhost:8080/api/booking", {
       method: "GET"
     });
 
